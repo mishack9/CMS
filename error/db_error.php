@@ -1,0 +1,1 @@
+<h1><strong>FAIL TO ESTABLISH DATABASE CONNECTION !!!</strong></h1>

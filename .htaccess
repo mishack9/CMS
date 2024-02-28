@@ -1,0 +1,14 @@
+RewriteEngine On
+#trailing slashes remove..
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} (.+)/$
+RewriteRule ^ %1 [L,R=301]
+
+#Remove the .php extension....
+RewriteCond %{REQUEST_FILENAME} !-d 
+RewriteCond %{REQUEST_FILENAME}\.php -f 
+RewriteRule (.*)$ $1.php
+
+
+#404 error
+ErrorDocument 404 http://localhost/projects/MY-BLOG/404.php
