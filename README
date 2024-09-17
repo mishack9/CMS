@@ -10,3 +10,7 @@ Email: pandora@gmail.com
 Password: abCD1234
 
 For educational use only....
+
+
+##Note::
+in order to test this project in your machine you must configure your smtp for sending mail via localhost...
